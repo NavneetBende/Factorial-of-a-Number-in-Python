@@ -1,0 +1,15 @@
+def getFactorial(num):
+    if num == 0:
+        return 1
+
+    return num * getFactorial(num - 1)
+
+
+num = 6
+fact = getFactorial(num)
+
+print("Factorial of", num, "is", fact)
+
+# Time complexity: O(N)
+# Space complexity: O(1)
+# Auxiliary Space complexity(Function call stack): O(N)
